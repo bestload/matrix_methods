@@ -1,0 +1,3 @@
+/home/load/CLionProjects/Gauss/cmake-build-debug/CMakeFiles/Gauss.dir
+/home/load/CLionProjects/Gauss/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/load/CLionProjects/Gauss/cmake-build-debug/CMakeFiles/rebuild_cache.dir

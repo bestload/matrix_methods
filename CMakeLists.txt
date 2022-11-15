@@ -3,4 +3,4 @@ project(Gauss)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Gauss main.cpp src/gauss.hpp src/gauss.cpp)
+add_executable(Gauss main.cpp src/gauss.hpp)

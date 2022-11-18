@@ -15,12 +15,12 @@ private:
 public:
     Matrix() = delete;
     Matrix(int _size);
-    void print();
 
+    void print();
     void fill();
 
     // Gauss's method
-    std::vector<T> gauss(std::vector<std::vector<T>> A, std::vector<T> b);
+    std::vector<T> gauss();
 
 };
 
@@ -65,17 +65,39 @@ void Matrix<T>::fill()
     {
         for(int j = 0; j < size; ++j)
         {
-            std::cout << "a[" << i << "][" << j << "] = ";
+            std::cout << "a[" << i + 1 << "][" << j + 1 << "] = ";
             std::cin >> A[i][j];
         }
-        std::cout << "b[" << i << "] = ";
+        std::cout << "b[" << i + 1 << "] = ";
         std::cin >> b[i];
     }
 }
 
 // function of solving matrix by gauss method
 template<typename T>
-std::vector<T> Matrix<T>::gauss(std::vector<std::vector<T>> A, std::vector<T> b) {
+std::vector<T> Matrix<T>::gauss()
+{
+    for(int k = 0; k < size; ++k)
+    {
+        for(int i = 1; i < size; ++i)
+        {
+            for(int j = 1; j < size; ++j)
+            {
+                if(j > i)
+                {
+                    A[i][j] = 0;
+                }
+                else
+                {
+                    std::cout << i + 1 << ' ' << j + 1 << std::endl;
+                    // recount of matrix elements
+//                    A[i][j] = A[i][j] - (A[i][k] / A[k][k]) * A[k][j];
+//                    b[i] = b[i] - (A[i][k] / A[k][k]) * b[k];
+                }
+            }
+        }
+    }
+
 }
 
 

@@ -55,12 +55,6 @@ build CMakeFiles/Gauss.dir/main.cpp.o: CXX_COMPILER__Gauss_Debug /home/load/CLio
   OBJECT_DIR = CMakeFiles/Gauss.dir
   OBJECT_FILE_DIR = CMakeFiles/Gauss.dir
 
-build CMakeFiles/Gauss.dir/src/gauss.cpp.o: CXX_COMPILER__Gauss_Debug /home/load/CLionProjects/Gauss/src/gauss.cpp || cmake_object_order_depends_target_Gauss
-  DEP_FILE = CMakeFiles/Gauss.dir/src/gauss.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles/Gauss.dir
-  OBJECT_FILE_DIR = CMakeFiles/Gauss.dir/src
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Gauss
@@ -69,7 +63,7 @@ build CMakeFiles/Gauss.dir/src/gauss.cpp.o: CXX_COMPILER__Gauss_Debug /home/load
 #############################################
 # Link the executable Gauss
 
-build Gauss: CXX_EXECUTABLE_LINKER__Gauss_Debug CMakeFiles/Gauss.dir/main.cpp.o CMakeFiles/Gauss.dir/src/gauss.cpp.o
+build Gauss: CXX_EXECUTABLE_LINKER__Gauss_Debug CMakeFiles/Gauss.dir/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Gauss.dir
   POST_BUILD = :
